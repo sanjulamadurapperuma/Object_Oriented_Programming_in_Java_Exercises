@@ -1,6 +1,7 @@
 package Week_2;
 
-import java.util.Date;
+
+import Week_1.Question_3.Date;
 
 public class Director {
     private String name;
@@ -35,5 +36,10 @@ public class Director {
 
     public void setDob(Date dob) {
         this.dob = dob;
+    }
+
+    @Override
+    public String toString() {
+        return "Director[name = " + getName() + ", " + "surname = " + getSurname() + ", " + "dob = " + getDob() + ", " + "movies directed = " + getNumDirectedMovie() + "]";
     }
 }
