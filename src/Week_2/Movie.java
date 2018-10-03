@@ -24,6 +24,7 @@ public class Movie {
         return director;
     }
 
+
     public int getNumAward() {
         return numAward;
     }
