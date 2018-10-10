@@ -40,6 +40,8 @@ public class Director {
 
     @Override
     public String toString() {
-        return "Director[name = " + getName() + ", " + "surname = " + getSurname() + ", " + "dob = " + getDob() + ", " + "movies directed = " + getNumDirectedMovie() + "]";
+        return "Director[name = " + getName() + ", " + "surname = " + getSurname() +
+                ", " + "dob = " + getDob() + ", " + "movies directed = " +
+                getNumDirectedMovie() + "]";
     }
 }

@@ -7,6 +7,7 @@ public class MyApplication {
 
         Person p = new Person("Ben");
         p.displayName();
+        System.out.println("--------------------\n");
 
         Person q = new Person("Kate");
         q.setSurname("Huffington");

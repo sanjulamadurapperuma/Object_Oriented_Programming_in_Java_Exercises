@@ -7,7 +7,7 @@ public class Person {
 
     /*Constructor - Create a new instance of Person */
     public Person(String n){
-        name = n;
+        this.name = n;
     }
 
     //Display the name

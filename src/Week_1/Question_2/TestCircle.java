@@ -9,7 +9,7 @@ public class TestCircle {
         circle1.setColour("Red");
 
         //Invoke the public methods
-        System.out.println("The circle has radius of " + circle1.getRadius() + " and area of " +
+        System.out.println("Circle 1 has radius of " + circle1.getRadius() + " and area of " +
                 circle1.getArea() + " and its colour is " + circle1.getColour());
 
         //Declare a second Circle object circle2 and invoke the second constructor.
@@ -19,17 +19,17 @@ public class TestCircle {
         circle2.setColour("Grey");
 
         //Invoke the public methods
-        System.out.println("The circle has radius of " + circle2.getRadius() + " and area of " +
+        System.out.println("Circle 2 has radius of " + circle2.getRadius() + " and area of " +
                 circle2.getArea() + " and its colour is " + circle2.getColour());
 
         //Question_13
-        System.out.println(circle1.getRadius());
+        System.out.println("Circle 1 radius: " + circle1.getRadius());
 
         circle1.setRadius(10);
 
         Circle circle3 = new Circle(10, "yellow");
 
-        System.out.println("The circle has radius of " + circle3.getRadius() + " and area of " +
+        System.out.println("Circle 3 has radius of " + circle3.getRadius() + " and area of " +
                 circle3.getArea() + " and its colour is " + circle3.getColour());
 
         System.out.println(circle3.toString());

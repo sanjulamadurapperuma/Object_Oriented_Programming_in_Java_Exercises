@@ -1,11 +1,8 @@
 package Week_1.Question_3;
-
 public class Date {
     private int day;
     private int month;
     private int year;
-    private String formattedDay;
-    private String formattedMonth;
 
     public Date(int day, int month, int year){
         this.day = day;
@@ -44,12 +41,14 @@ public class Date {
     }
 
     public String getDate(){
+        String formattedDay;
         if (day < 10){
             formattedDay = String.format("%02d", day);
         } else{
             formattedDay = Integer.toString(getDay());
         }
 
+        String formattedMonth;
         if (month < 10) {
             formattedMonth = String.format("%02d", month);
         } else{
