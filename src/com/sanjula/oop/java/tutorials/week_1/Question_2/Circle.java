@@ -1,7 +1,7 @@
 /*File: Circle.java
 * Description: Contains properties of a circle and its getters and setters */
 
-package Week_1.Question_2;
+package com.sanjula.oop.java.tutorials.week_1.Question_2;
 
 /**
  * This is a model class to hold phone information

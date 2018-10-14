@@ -1,4 +1,4 @@
-package Week_1.Question_1;
+package com.sanjula.oop.java.tutorials.week_1.Question_1;
 
 public class Person {
     private String name;

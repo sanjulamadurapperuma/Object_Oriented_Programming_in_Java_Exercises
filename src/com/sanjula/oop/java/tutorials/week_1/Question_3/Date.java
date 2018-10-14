@@ -1,4 +1,4 @@
-package Week_1.Question_3;
+package com.sanjula.oop.java.tutorials.week_1.Question_3;
 public class Date {
     private int day;
     private int month;

@@ -1,6 +1,6 @@
-package Week_3;
+package com.sanjula.oop.java.tutorials.week_3;
 
-import Week_1.Question_2.Circle;
+import com.sanjula.oop.java.tutorials.week_1.Question_2.Circle;
 
 public class Cylinder extends Circle {
     private double height;

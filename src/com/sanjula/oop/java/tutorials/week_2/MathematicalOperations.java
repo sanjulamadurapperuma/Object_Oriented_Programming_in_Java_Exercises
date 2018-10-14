@@ -1,4 +1,4 @@
-package Week_2;
+package com.sanjula.oop.java.tutorials.week_2;
 
 
 public class MathematicalOperations {

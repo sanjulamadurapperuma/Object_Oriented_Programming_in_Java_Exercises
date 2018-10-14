@@ -1,4 +1,4 @@
-package Week_2;
+package com.sanjula.oop.java.tutorials.week_2;
 
 public class Movie {
     private String title;
@@ -35,7 +35,8 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Movie[title = " + getTitle() + ", " + "category = " + getCategory() + ", " + "director name = " +
-                director.getName() + ", " + "Director surname = " + director.getSurname() + ", " + "number of awards" + getNumAward() + "]";
+        return "Movie[title = " + getTitle() + ", " + "category = " + getCategory()
+                + ", " + "director name = " + director.getName() + ", " + "Director surname = "
+                + director.getSurname() + ", " + "number of awards" + getNumAward() + "]";
     }
 }

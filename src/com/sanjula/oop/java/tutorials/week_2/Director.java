@@ -1,7 +1,7 @@
-package Week_2;
+package com.sanjula.oop.java.tutorials.week_2;
 
 
-import Week_1.Question_3.Date;
+import com.sanjula.oop.java.tutorials.week_1.Question_3.Date;
 
 public class Director {
     private String name;
