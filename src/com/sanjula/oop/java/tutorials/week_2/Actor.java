@@ -2,6 +2,8 @@ package com.sanjula.oop.java.tutorials.week_2;
 
 import com.sanjula.oop.java.tutorials.week_1.Question_3.Date;
 
+import java.util.Arrays;
+
 public class Actor {
     private String name;
     private String surname;
@@ -45,5 +47,12 @@ public class Actor {
 
     public void setDob(Date dob) {
         Dob = dob;
+    }
+
+    @Override
+    public String toString() {
+        return "Name = " + getName() + ", " + "Surname = " + getSurname()
+                + ", " + "Number of Movies = " + getNumOfMoviesActedIn() + ", " + "Date of Birth = "
+                + getDob() + "]";
     }
 }
