@@ -1,4 +1,4 @@
-package com.sanjula.oop.java.tutorials.week_3;
+package com.sanjula.oop.java.tutorials.week_3.Exercise_1;
 
 import com.sanjula.oop.java.tutorials.week_1.Question_2.Circle;
 
@@ -37,7 +37,15 @@ public class Cylinder extends Circle {
 
     @Override
     public double getArea(){
-        return 2 * Math.PI * getRadius() * getHeight() + super.getArea();
+        return 2 * Math.PI * getRadius() * getHeight() + super.getArea() * 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Cylinder: subclass of " + super.toString()
+                + "height= " + height;
     }
 }
+
+
 

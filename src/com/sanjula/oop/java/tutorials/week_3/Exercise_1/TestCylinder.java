@@ -1,6 +1,7 @@
-package com.sanjula.oop.java.tutorials.week_3;
+package com.sanjula.oop.java.tutorials.week_3.Exercise_1;
 
 import com.sanjula.oop.java.tutorials.week_1.Question_2.Circle;
+import com.sanjula.oop.java.tutorials.week_3.Exercise_1.Cylinder;
 
 public class TestCylinder {
     public static void main(String[] args) {
@@ -33,6 +34,9 @@ public class TestCylinder {
                 "volume=" + c3.getVolume());
 
         //Question 4
-        Circle circle1 = new Circle();
+        Circle circle1 = new Circle(5);
+        Cylinder c4 = new Cylinder(5, 10);
+        System.out.println("Circle Area: " + circle1.getArea() + "\n"
+                + "Cylinder area" + c4.getArea());
     }
 }
