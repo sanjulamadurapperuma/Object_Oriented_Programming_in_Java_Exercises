@@ -42,9 +42,9 @@ public class Student extends Person{
                 "IDNumber=" + IDNumber +
                 ", Fee=" + fee +
                 ", Grade=" + grade +
-                ", Name='" + myName + '\'' +
-                ", Age=" + myAge +
-                ", Gender='" + myGender + '\'' +
+                ", Name='" + super.myName + '\'' +
+                ", Age=" + super.myAge +
+                ", Gender='" + super.myGender + '\'' +
                 '}';
     }
 }

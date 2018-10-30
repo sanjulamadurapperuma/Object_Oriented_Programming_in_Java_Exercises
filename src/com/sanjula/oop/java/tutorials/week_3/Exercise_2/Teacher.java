@@ -31,9 +31,9 @@ public class Teacher extends  Person {
         return "Teacher{" +
                 "Salary=" + salary +
                 ", Subject='" + subject + '\'' +
-                ", Name='" + myName + '\'' +
-                ", Age=" + myAge +
-                ", Gender='" + myGender + '\'' +
+                ", Name='" + super.myName + '\'' +
+                ", Age=" + super.myAge +
+                ", Gender='" + super.myGender + '\'' +
                 '}';
     }
 }
