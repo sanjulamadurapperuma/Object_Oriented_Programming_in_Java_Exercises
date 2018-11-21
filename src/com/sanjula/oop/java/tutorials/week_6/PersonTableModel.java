@@ -9,7 +9,8 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class PersonTableModel extends AbstractTableModel {
-    private static String[] columnNames = {"Name", "Date of Birth", "Type"};
+    private static String[] columnNames = {"Name", "Date of Birth", "Type"};//Made static so
+                                    // that values stay same despite creating new objects
     private static ArrayList<Person> list;
 
     public PersonTableModel(ArrayList<Person> personList) {
@@ -49,13 +50,14 @@ public class PersonTableModel extends AbstractTableModel {
     }
 
     public static void main(String[] args) {
-        Person person1 = new Teacher("John", new Date(25, 18, 1983), 25000);
+        Person person1 = new Teacher("John", new Date(25, 12, 1983), 25000);
         Person person2 = new Student("Kate", new Date(12, 01, 1998), 012, "SE");
-//        list.add(person1);
-//        list.add(person2);
+        Person person3 = new Teacher("David", new Date(05, 02, 1973), 50000);
 
         String data[][]={{person1.getName(), person1.getDateOfBirth().toString(),"Teacher"},
-                {person2.getName(),person2.getDateOfBirth().toString(),"Student"}};
+                {person2.getName(),person2.getDateOfBirth().toString(),"Student"},
+                {person3.getName(),person3.getDateOfBirth().toString(),"Teacher"}};
+        //Add student and teacher objects to a Two-Dimensional String array
 
         JFrame frame = new JFrame("Person");
         JTable myTable = new JTable(data, columnNames);
@@ -66,8 +68,13 @@ public class PersonTableModel extends AbstractTableModel {
             Color originalColor = null;
 
             @Override
-            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column){
-                Component renderer = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+            public Component getTableCellRendererComponent(
+                    JTable table, Object value, boolean isSelected,
+                    boolean hasFocus, int row, int column){
+
+                Component renderer = super.getTableCellRendererComponent(table,
+                        value, isSelected, hasFocus, row, column);//Pass the parameters to the
+                                                    // getTableCellRendererComponent method
 
                 //check the type and set the render accordingly
                 if(value == "Teacher"){
@@ -79,8 +86,8 @@ public class PersonTableModel extends AbstractTableModel {
             }
         });
 
-        frame.add(myTable);
-        frame.setSize(400, 100);
+        frame.add(myTable);//Add table to the JFrame
+        frame.setSize(400, 100);//Dimensions of the Frame
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
