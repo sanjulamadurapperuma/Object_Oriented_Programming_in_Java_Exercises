@@ -73,6 +73,18 @@ public class ShowImageFrame extends JFrame {
             lblImage.setIcon(imageIconZero);
         }
     }
+
+    public static void main(String[] args) {
+        //Invoke the constructor by allocating an anonymous instance
+        ShowImageFrame myFrame = new ShowImageFrame();
+
+        myFrame.setSize(600, 400);//"super" Frame sets the intial size
+        myFrame.setTitle("My Frame"); //"super" Frame sets title
+        myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myFrame.setVisible(true); // show "super" Frame
+    }
+
+
 }
 
 
