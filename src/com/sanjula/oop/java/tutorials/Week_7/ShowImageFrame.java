@@ -84,7 +84,6 @@ public class ShowImageFrame extends JFrame {
         myFrame.setVisible(true); // show "super" Frame
     }
 
-
 }
 
 
