@@ -1,4 +1,4 @@
-package com.sanjula.oop.java.tutorials.Week_7;
+package com.sanjula.oop.java.tutorials.week_7;
 
 import javax.swing.*;
 import java.awt.*;
