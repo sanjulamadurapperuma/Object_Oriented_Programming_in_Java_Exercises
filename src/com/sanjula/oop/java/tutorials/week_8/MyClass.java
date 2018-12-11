@@ -4,7 +4,7 @@ public class MyClass {
     public static void main(String[] args) {
         //Question 1
 //        int myArray[] = new int[5];
-//        //trying to access element 5
+//        // trying to access element 5
 //        System.out.println(myArray[5]);
 
         try{
@@ -14,6 +14,5 @@ public class MyClass {
         }catch(ArrayIndexOutOfBoundsException e) {
             System.out.println("The element " + e.getMessage() + " does not exist!");
         }
-
     }
 }
