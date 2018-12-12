@@ -11,11 +11,10 @@ public class Question4 {
         System.out.println("Please enter an integer");
         try{
             value = input.nextInt();
+            System.out.println("Value: " + value);
         }catch (InputMismatchException e){
             System.out.println("Wrong input: An integer should be entered");
         }
 
-
-        System.out.println("Value: " + value);
     }
 }
