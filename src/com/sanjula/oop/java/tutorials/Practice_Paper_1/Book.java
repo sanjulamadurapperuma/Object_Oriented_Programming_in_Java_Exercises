@@ -5,10 +5,6 @@ public class Book implements Comparable<Book>{
     private String author;
     private int pageNumber;
 
-    public Book(String name){
-        this.name = name;
-    }
-
     public String getName(){
         return name;
     }
@@ -36,5 +32,14 @@ public class Book implements Comparable<Book>{
     @Override
     public int compareTo(Book book) {
         return(this.pageNumber - book.pageNumber);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", pageNumber=" + pageNumber +
+                '}';
     }
 }
